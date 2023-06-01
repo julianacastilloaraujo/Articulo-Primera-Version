@@ -1,0 +1,153 @@
+t%%%%%%%%%%%%%%%%%%%% author.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample root file for your "contribution" to a proceedings volume
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%% Springer %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass{svproc}
+%
+% RECOMMENDED %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+
+% to typeset URLs, URIs, and DOIs
+\usepackage{url}
+\usepackage{soulutf8}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{multicol,bm}
+\usepackage{adjustbox}
+\usepackage{amsmath,array}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage[square,comma,numbers]{natbib}
+\usepackage{listings}
+% \usepackage{caption} 
+\def\UrlFont{\rmfamily}
+\usepackage{hyperref,url}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,  
+    urlcolor=blue,
+    citecolor=blue,
+}
+
+\usepackage{pgfplots}
+\usepackage{tikz}
+%\usetikzlibrary{pgfplots.groupplots,shapes,arrows,shadows.blur,positioning,decorations.markings}
+\usetikzlibrary{shapes.misc, positioning,fit,calc}
+
+\pgfplotsset{compat=1.16}
+
+\pgfplotsset{major grid style={ultra thin,dotted,black!100}}
+\pgfplotsset{minor grid style={solid,black!10}}
+
+
+\renewcommand\UrlFont{\color{blue}\rmfamily}
+
+%\newcounter{lafig}
+
+\newcommand{\captionfig}[1]{\refstepcounter{figure}\par\medskip{\bfseries Fig. \thefigure.} #1}
+\newcommand{\eref}[1]{Equation~\eqref{#1}}
+\newcommand{\fref}[1]{Figure~\ref{#1}}
+\newcommand{\tref}[1]{Table~\ref{#1}}
+\newcommand{\sref}[1]{Section~\ref{#1}}
+\newcommand{\aref}[1]{Appendix~\ref{#1}}
+
+\newcommand{\esref}[2]{Equations~\eqref{#1}~~-~\eqref{#2}}
+\newcommand{\fsref}[2]{Figures~\ref{#1}~~-~\ref{#2}}
+\newcommand{\tsref}[2]{Tables~\ref{#1}~~-~\ref{#2}}
+\newcommand{\asref}[2]{Appendices~\ref{#1}~~-~\ref{#2}}
+\begin{document}
+\mainmatter              % start of a contribution
+%
+\title{Prediction... }
+%
+\titlerunning{Prediction...}  % abbreviated title (for running head)
+%                                     also used for the TOC unless
+%                                     \toctitle is used
+%
+\author{Héctor M. Ruiz-Juárez\inst{1\href{https://orcid.org/0000-0002-8778-7787}{[0000-0002-8778-7787]}} \and  
+\\Julianna Castillo-Araujo\inst{2\href{https://orcid.org/0000-0003-0167-6750}{[0000-0003-0167-6750]}} \and 
+\\Mauricio Gabriel Orozco-del-Castillo\inst{1,*\href{https://orcid.org/0000-0003-0167-6750}{[0000-0003-0167-6750]}} \and 
+\\Nora Cuevas-Cuevas\inst{1\href{https://orcid.org/0000-0002-5012-6619}{[0000-0002-5012-6619]}} \and 
+\\Francisco Cárdenas-Pimentel\inst{1\href{https://orcid.org/0000-0001-5793-6449}{[0000-0001-5793-6449]}} \and 
+\\Raúl Cáceres-Escalante\inst{1\href{https://orcid.org/0000-0001-9714-7137
+}{[0000-0001-9714-7137]}}
+}
+%
+\authorrunning{Ruiz-Juárez et al} % abbreviated author list (for running head)
+%
+%%%% list of authors for the TOC (use if author list has to be modified)
+\tocauthor{X1, X2, X3, X4, X5}
+%
+\institute{
+    Tecnológico Nacional de México/IT de Mérida, Departamento de Sistemas y Computación, Mérida, Yucatán, México\\
+    Colombia\\
+    Corresponding author: \email{mauricio.orozco@itmerida.edu.mx}
+    % Instituto Politécnico Nacional, Escuela Superior de Ingeniería Mecánica y Eléctrica
+    % Unidad Zacatenco, Sección de Estudios de Posgrado e Investigación,
+    % Mexico City, Mexico\\
+    % \and
+    % Instituto Politécnico Nacional, Centro de Desarrollo Aeroespacial,
+    % Mexico City, Mexico\\
+    %Corresponding author: \email{mauricio.orozco@itmerida.edu.mx}
+    % Instituto Politécnico Nacional, Centro de Estudios Científicos y Tecnológicos No. 10 ¨Carlos Vallejo Márquez¨, Mexico City, Mexico
+    % \and
+    % AAAI Student Chapter at Yucatán, México (AAAIMX), Association for the Advancement 
+}
+
+\maketitle              % typeset the title of the contribution
+
+\begin{abstract}
+
+\keywords{}
+\end{abstract}
+%
+\section{Introduction}\label{Sec:Intro}
+Agriculture...
+
+ML applications in agriculture haeve usually been classified into four categories: crop, livestock, water and soil management \cite{Liakos2018}. Crop management, correspondingly, has been classified into five separate areas 1) yield prediction, the mapping, estimation, matching of crop supply with demand, and crop management to increase productivity, 2) disease detection, including pest and disease control in open-air and greenhouse conditions;3) weed detection, being weed the most important threat to crop production \cite{Liakos2018}; 4) crop quality, identification of features connected with crop quality to increase product price and reduce waste; and 5) species recognition, the automatic identification and classification of plant species.  
+
+In this work we present a...
+
+
+%\begin{figure}[ht]
+%    \centering
+%    \includegraphics[width=0.9\textwidth]{ims/heatmaps.png}
+%    \caption{Bla bla .}
+%    \label{fig:heatmaps}
+%\end{figure}
+
+\section{Materials and methods}\label{Sec:Metodologia}
+
+% Cómo citar la parte de los datos de conagua
+% ya que lo que se tiene es que cada año están publicando datos pero 
+% al momento de que publican datos están llevando un libro del año pasado entonces lo que hay que hacer es citar esa limpiza?
+% a ya sé hay que parafrasear las fuentes de los sets de datos
+
+\begin{itemize}
+    \item Los conflictos por agua en México. Diagnóstico y análisis \cite{Perez2006}  %aqui citan 
+    \item El agua en México Actores, sectores y paradigmas para una transformación social-ecológica \cite{LopezMorales2017} %aqui citan a CONAGUA (FUENTE PARA DATASET)
+    \item 
+\end{itemize}
+
+\section{Development and results}\label{Sec:DesarrolloResultados}
+
+\section{Discussion and conclusions}\label{Sec:Concl}
+
+\section{Future work}\label{Sec:TrabajoFuturo}
+
+\subsection*{Acknowledgements} This work was supported by projects 13933.22-P and 14601.22-P from Tecnológico Nacional de México/IT de Mérida.
+
+% \section{Referencias}
+{
+\bibliographystyle{splncs03_unsrt}
+% \bibliographystyle{ieeetr}
+\bibliography{ref}
+}
+
+\end{document}
